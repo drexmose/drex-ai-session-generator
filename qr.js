@@ -8,7 +8,7 @@ const fs = require('fs');
 let router = express.Router()
 const pino = require("pino");
 const {
-	default: Gifted_Tech,
+	default: drex_ai,
 	useMultiFileAuthState,
 	jidNormalizedUser,
 	Browsers,
@@ -28,13 +28,13 @@ const {
 } = require("node:fs/promises")
 router.get('/', async (req, res) => {
 	const id = makeid();
-	async function GIFTED_MD_QR_CODE() {
+	async function DREX_AI_QR_CODE() {
 		const {
 			state,
 			saveCreds
 		} = await useMultiFileAuthState('./temp/' + id)
 		try {
-			let Qr_Code_By_Gifted_Tech = Gifted_Tech({
+			let Qr_Code_By_Drex_Mose = drex_ai({
 				auth: state,
 				printQRInTerminal: false,
 				logger: pino({
@@ -56,23 +56,23 @@ router.get('/', async (req, res) => {
 					let data = fs.readFileSync(__dirname + `/temp/${id}/creds.json`);
 					await delay(800);
 				   let b64data = Buffer.from(data).toString('base64');
-				   let session = await Qr_Code_By_Gifted_Tech.sendMessage(Qr_Code_By_Gifted_Tech.user.id, { text: 'GIFTED-MD;;;' + b64data });
+				   let session = await Qr_Code_By_Drex_Mose.sendMessage(Qr_Code_By_Drex_Mose.user.id, { text: 'DREX-AI;;;' + b64data });
 	
 				   let GIFTED_MD_TEXT = `
-*_Qr Code By Gifted Tech_*
-*_Made With 🤍_*
+*_Qr Code By DREX MOSE_*
+*_Made With 🖤_*
 	
 _Don't Forget To Give Star To My Repo_`
-	 await Qr_Code_By_Gifted_Tech.sendMessage(Qr_Code_By_Gifted_Tech.user.id,{text:GIFTED_MD_TEXT},{quoted:session})
+	 await Qr_Code_By_Drex_Mose.sendMessage(Qr_Code_By_Drex_Mose.user.id,{text:DREX-AI_TEXT},{quoted:session})
 
 
 
 					await delay(100);
-					await Qr_Code_By_Gifted_Tech.ws.close();
+					await Qr_Code_By_Drex_Mose.ws.close();
 					return await removeFile("temp/" + id);
 				} else if (connection === "close" && lastDisconnect && lastDisconnect.error && lastDisconnect.error.output.statusCode != 401) {
 					await delay(10000);
-					GIFTED_MD_QR_CODE();
+					DREX_AI_QR_CODE();
 				}
 			});
 		} catch (err) {
@@ -85,6 +85,6 @@ _Don't Forget To Give Star To My Repo_`
 			await removeFile("temp/" + id);
 		}
 	}
-	return await GIFTED_MD_QR_CODE()
+	return await DREX_AI_QR_CODE()
 });
 module.exports = router
