@@ -59,7 +59,7 @@ router.get('/', async (req, res) => {
 				   let session = await Qr_Code_By_Drex_Mose.sendMessage(Qr_Code_By_Drex_Mose.user.id, { text: 'DREX-AI;;;' + b64data });
 	
 				   let GIFTED_MD_TEXT = `
-*_Qr Code By DREX MOSE_*
+Qr Code By ⟠ 𝐃𝐑𝚺𝐗 ⿻ 𝐂𝐋͢𝐢𝚵𝐍͢𝐓 々
 *_Made With 🖤_*
 	
 _Don't Forget To Give Star To My Repo_`
