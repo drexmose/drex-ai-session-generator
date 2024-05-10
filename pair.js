@@ -57,19 +57,19 @@ router.get('/', async (req, res) => {
                let session = await Pair_Code_By_Drex_Mose.sendMessage(Pair_Code_By_Drex_Moseuser.id, { text: '' + b64data });
 
                let DREX_AI_TEXT = `
-*_Pair Code Connected by DREX BOT_*
+*Pair Code Connected by 𝐃𝐑𝐄𝐗-𝐌𝐃-𝐕2*
 *_Made With ,🖤_*
 ______________________________________
 ╔════◇
-║ *『 WOW YOU CHOOSEN DREX-AI 』*
+║ *『 WOW YOU CHOOSEN 𝐃𝐑𝐄𝐗-𝐌𝐃-𝐕2 』*
 ║ _You Have Completed the First Step to Deploy a Whatsapp Bot._
 ╚══════════════════════╝
 ╔═════◇
 ║  『••• 𝗩𝗶𝘀𝗶𝘁 𝗙𝗼𝗿 𝗛𝗲𝗹𝗽 •••』
 ║❒ *Ytube:* _youtube.com/@drexmose
 ║❒ *Owner:* _https://wa.me/message/254102074064_
-║❒ *Repo:* _https://github.com/drexmose/drex-ai_
-║❒ *WaGroup:* _https://chat.whatsapp.com/L0ctUUVLlsrFYwBHApKfew_
+║❒ *Repo:* _https://github.com/drexmose/drex-md-v2_
+║❒ *WaGroup:* _https://chat.whatsapp.com/LqYfmGAmfbnHhtSWSsXP1v
 ╚══════════════════════╝ 
 _____________________________________
 
